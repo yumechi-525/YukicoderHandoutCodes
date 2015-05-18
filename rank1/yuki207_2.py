@@ -1,0 +1,1 @@
+print("\n".join( (lambda x: [str(i) for i in range(int(x[0]), int(x[1]) + 1) if (i % 3 == 0 or str(i).find("3") != -1)])(input().split())))
