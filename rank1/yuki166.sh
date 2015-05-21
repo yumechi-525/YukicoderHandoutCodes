@@ -1,0 +1,1 @@
+read h w n k; test $(($h*$w % $n)) -eq $(($k % $n)) && echo "YES" || echo "NO";
