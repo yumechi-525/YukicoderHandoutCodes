@@ -16,4 +16,4 @@ if len(eli) != N and len(eli) != 0:
 res = 0
 for elem in li:
     res += (mw) - elem
-print(res)
+print(res // 2)
