@@ -1,4 +1,4 @@
-import itertools
+from math import factorial
 
 S = input()
 dic = dict()
@@ -15,6 +15,6 @@ vs.sort()
 vs = vs[::-1]
 
 for i in vs:
-    res *= len(list(itertools.combinations(range(length), i)))
+    res *= factorial(length) // (factorial(length - i) * factorial(i))
     length -= i
-print(res-1)
+print((res-1))
