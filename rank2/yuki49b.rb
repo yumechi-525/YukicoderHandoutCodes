@@ -13,12 +13,7 @@ for c in line.split(//) do
 end
 nums.push(num)
 
-res = nums[0]
 for i in 0...marks.length do
-    if marks[i] == "*"
-        res += nums[i+1]
-        else
-        res *= nums[i+1]
-    end
+    nums[0] = marks[i] == "*" ? nums[0] + nums[i+1] : nums[0] * nums[i+1]
 end
-puts res
+puts nums[0]
