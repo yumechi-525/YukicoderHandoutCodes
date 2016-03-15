@@ -27,35 +27,6 @@ using namespace std;
 #define MOD 1000000007
 
 int alphacount[26];
-/* 
-0 A
-1 B
-2 C
-3 D
-4 E
-5 F
-6 G
-7 H
-8 I
-9 J
-10 K
-11 L
-12 M
-13 N
-14 O
-15 P
-16 Q
-17 R
-18 S
-19 T
-20 U
-21 V
-22 W
-23 X
-24 Y
-25 Z
-*/
-
 /*
 helloworld
 -> lとoのみ考える
@@ -84,8 +55,9 @@ int main(){
 
 	ll lmax = 1;
 	FOR(i, 1, alphacount[11]-1) {
-		int temp = (alphacount[11] - i) * (alphacount[11] - i - 1) / 2;
-		lmax = max(lmax, (ll)i * temp);
+		// calc Combination( (alphacount[11] - i)C2 )
+		int tcombi = (alphacount[11] - i) * (alphacount[11] - i - 1) / 2; 
+		lmax = max(lmax, (ll)i * tcombi);
 	}
 	if(alphacount[11] < 3) lmax = 0;
 

@@ -30,7 +30,7 @@ bool dp[10010];
 vector<int> getPrime(int n) {
 	vector<int> ret;
 
-	// errro check
+	// error check
 	if(n <= 0) {
 		cout << "can use this method negative number: getPrime " << n << endl;
 		return ret;
