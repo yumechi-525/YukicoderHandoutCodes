@@ -37,7 +37,12 @@ int main(){
 	int request = (n - 1) % (k + 1);
 	int response = 0;
 
-	REP(i, 6) {
+#if DEBUG
+	cout << "** REQUEST **" << endl; // debug
+#endif
+	cout << request << endl;
+	
+	REP(i, 10) {
 #if DEBUG
 	cout << "** RESPONSE **" << endl; // debug
 #endif
