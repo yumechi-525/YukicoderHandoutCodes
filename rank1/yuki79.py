@@ -8,7 +8,7 @@ for a in arr:
         dic[a] += 1
 maxkey = -1
 maxval = -111
-for k, v in dic.items():
+for k, v in sorted(dic.items()):
     if v >= maxval:
         maxval = v
         maxkey = max(maxkey, k)
