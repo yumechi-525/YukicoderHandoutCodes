@@ -1,0 +1,1 @@
+print((lambda a,b,x: sum([(a+b)*(x.count(i)-1) for i in set(x) if x.count(i) > 1]))(int(input()), int(input()), [int(input()) for _ in [0]*int(input())]))
